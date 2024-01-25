@@ -1,6 +1,5 @@
 package com.parameta.assessment.controller;
 
-import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,21 +19,12 @@ public class EmployeerController {
 	
 	@GetMapping(value = "/getemployee")
 	public EmployeeDTOOut consultEmployeeFull(EmployeeDTOIn employeeDTOIn) {
-		/*EmployeeDTOOut employeeDTOOut = employeeService.
-				selectEmployeeByEmployee(employeeDTOIn);*/
-		EmployeeDTOOut employeeDTOOut = new EmployeeDTOOut();
-		employeeDTOOut.setId(1L);
-		employeeDTOOut.setName("Carlos");
-		employeeDTOOut.setLastName("Sanz");
-		employeeDTOOut.setDocumentType("CC");
-		employeeDTOOut.setDocumentNumber("1015");
-		employeeDTOOut.setLinkDate(new Date());
-		employeeDTOOut.setBirthDate(new Date());
-		employeeDTOOut.setJobTittle("Engineer");
-		employeeDTOOut.setSalary(1000L);
-		employeeDTOOut.setEmployeeAge(27);
-		employeeDTOOut.setLinkTime(8L);
+		EmployeeDTOOut employeeDTOOut = employeeService.
+				selectEmployeeByEmployee(employeeDTOIn);
 		return employeeDTOOut;
 	}
+	
+	
+	
 
 }
