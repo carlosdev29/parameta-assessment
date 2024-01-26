@@ -4,12 +4,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import com.parameta.assessment.db.dao.EntityDao;
 import com.parameta.assessment.db.dao.IEmployeeDao;
+import com.parameta.assessment.db.dao.entity.EmployeeEntityDao;
 
-@Repository
-public class EmployeeDAO implements IEmployeeDao {
+
+public class EmployeeDAO{
 	
+	/*
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 	
@@ -29,8 +30,9 @@ public class EmployeeDAO implements IEmployeeDao {
 	public EntityDao selectEmployeeDao(EntityDao entityDao) {
 		// TODO Auto-generated method stub
 		String querySelect = "Select * from tbl_empoyee";
+		this.jdbcTemplate.query(querySelect, null);
 		return null;
-	}
+	}*/
 	
 
 }

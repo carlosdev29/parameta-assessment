@@ -3,8 +3,8 @@ package com.parameta.assessment.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.parameta.assessment.db.dao.EntityDao;
 import com.parameta.assessment.db.dao.IEmployeeDao;
+import com.parameta.assessment.db.dao.entity.EmployeeEntityDao;
 import com.parameta.assessment.service.IEmployeeService;
 import com.parameta.assessment.service.dto.EmployeeDTOIn;
 import com.parameta.assessment.service.dto.EmployeeDTOOut;

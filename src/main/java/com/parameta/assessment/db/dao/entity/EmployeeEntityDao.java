@@ -1,9 +1,9 @@
-package com.parameta.assessment.db.dao;
+package com.parameta.assessment.db.dao.entity;
 
 import java.util.Date;
 
 
-public class EntityDao {
+public class EmployeeEntityDao {
 	
 	private Long id;
 	
